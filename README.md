@@ -3,7 +3,7 @@
 
 <div align="center">
 
- <h3><b>TLeaderboard README</b></h3>
+ <h3><b>Leaderboard README</b></h3>
 
 </div>
 
