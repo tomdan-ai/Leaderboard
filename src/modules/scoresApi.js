@@ -9,17 +9,16 @@ export const fetchData = async () => {
   return data;
 };
 
-const setScores = async (data) => {
-    const url = `https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/${key}/scores/`;
-    const options = {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify(data),
-    };
-    const response = await fetch(url, options);
-    const result = await response.json();
-    return result;
-  }
-  
+export async function setScores(data) {
+  const url = `https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/${key}/scores/`;
+  const options = {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+    },
+    body: JSON.stringify(data),
+  };
+  const response = await fetch(url, options);
+  const result = await response.json();
+  return result;
+}
