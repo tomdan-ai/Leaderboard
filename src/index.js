@@ -1,3 +1,4 @@
+import './style.css';
 import { fetchData, setScores } from './modules/scoresApi.js';
 // Get the input fields and button
 const nameInput = document.querySelector('#text');
