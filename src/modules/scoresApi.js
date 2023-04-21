@@ -9,7 +9,7 @@ export const fetchData = async () => {
   return data;
 };
 
-export async function setScores(data) {
+export const setScores = async (data) => {
   const url = `https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/${key}/scores/`;
   const options = {
     method: 'POST',
@@ -22,3 +22,11 @@ export async function setScores(data) {
   const result = await response.json();
   return result;
 }
+
+
+
+
+
+
+
+
